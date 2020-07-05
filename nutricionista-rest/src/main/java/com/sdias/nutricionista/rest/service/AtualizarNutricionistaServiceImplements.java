@@ -13,7 +13,7 @@ import java.time.LocalDate;
 public class AtualizarNutricionistaServiceImplements {
 
     @Autowired
-    NutricionistaRepository nutricionistaRepository;
+    private NutricionistaRepository nutricionistaRepository;
 
     public Nutricionista atualizarNutricionista(NutricionistaResource nutricionistaResource, Long id)
             throws NutricionistaNotFoundException {

@@ -15,7 +15,7 @@ public class BuscarNutricionistaPorIdServiceImplement {
     private NutricionistaRepository nutricionistaRepository;
 
     @Autowired
-    CadastrarNutricionistaServiceImplement autalizarCadastro;
+    private CadastrarNutricionistaServiceImplement autalizarCadastro;
 
     public Nutricionista buscarPorId(Long id)
             throws NutricionistaNotFoundException {

@@ -20,7 +20,7 @@ import java.util.List;
 public class NutricionistaController {
 
     @Autowired
-    NutricionistaRepository nutricionistaRepository;
+    private NutricionistaRepository nutricionistaRepository;
 
     @Autowired
     private BuscarNutricionistasServiceImplement serviceBuscar;
@@ -60,9 +60,7 @@ public class NutricionistaController {
             throws NutricionistaNotFoundException {
         Nutricionista nutricionista = serviceAtualizarPorId.atualizarNutricionista(nutricionistaResource, id);
         return nutricionista;
-
     }
-
 
     @DeleteMapping(path = "/{id}")
     public void deleteNutricionista(
